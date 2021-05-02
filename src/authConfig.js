@@ -32,8 +32,7 @@ export const msalConfig = {
     clientId: "93f423c8-3e7f-4458-87ca-069cb4a62049", // This is the ONLY mandatory field; everything else is optional.
     authority: b2cPolicies.authorities.signUpSignIn.authority, // Choose sign-up/sign-in user-flow as your default.
     knownAuthorities: [b2cPolicies.authorityDomain], // You must identify your tenant's domain as a known authority.
-    redirectUri:
-      "https://olafwrieden-ms-identity-javascript-react-spa-3952-3000.githubpreview.dev",
+    redirectUri: "https://localhost:5600",
   },
   //   auth: {
   //     clientId: "2fdd06f3-7b34-49a3-a78b-0cf1dd87878e", // This is the ONLY mandatory field; everything else is optional.
@@ -77,10 +76,7 @@ export const msalConfig = {
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 export const loginRequest = {
-  scopes: [
-    "https://nemopi.onmicrosoft.com/nemocloud/users.read",
-    "https://nemopi.onmicrosoft.com/nemocloud/demo.read",
-  ],
+  scopes: ["https://nemopi.onmicrosoft.com/nemocloud/users.read"],
 };
 
 /**
@@ -88,5 +84,5 @@ export const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 export const graphConfig = {
-  graphMeEndpoint: "https://olafwrieden-active-directory-b2c-javascript-nodejs-webapi-7c5c-5000.githubpreview.dev/me",
+  graphMeEndpoint: "http://localhost:5500/me",
 };

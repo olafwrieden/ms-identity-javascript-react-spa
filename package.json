@@ -15,7 +15,7 @@
     "react-scripts": "^4.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=5600 HTTPS=true react-scripts start",
     "build": "react-scripts build"
   },
   "browserslist": {
