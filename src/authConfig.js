@@ -5,7 +5,7 @@
 
 import { LogLevel } from "@azure/msal-browser";
 
-const b2cPolicies = {
+export const b2cPolicies = {
   names: {
     signUpSignIn: "B2C_1_susi",
     editProfile: "B2C_1_edit_profile",
